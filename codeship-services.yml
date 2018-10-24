@@ -1,0 +1,12 @@
+app:
+  image: ubuntu
+  depends_on:
+    - shell-form
+
+shell-form:
+  build:
+    dockerfile: Dockerfile.shell-form
+
+exec-form:
+  build:
+    dockerfile: Dockerfile.exec-form

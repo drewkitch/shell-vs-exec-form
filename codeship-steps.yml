@@ -1,0 +1,8 @@
+- type: serial
+  steps:
+  - name: exec form
+    service: exec-form
+    command: false
+  - name: shell form
+    service: shell-form
+    command: false
