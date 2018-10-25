@@ -1,8 +1,8 @@
 - type: parallel
   steps:
   - name: exec form
-    service: exec-form
+    service: app-with-shell
     command: false
   - name: shell form
-    service: shell-form
+    service: app-with-exec
     command: false

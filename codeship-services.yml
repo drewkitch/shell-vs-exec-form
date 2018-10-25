@@ -1,4 +1,4 @@
-app:
+app-with-shell:
   image: ubuntu
   depends_on:
     - shell-form
@@ -6,6 +6,11 @@ app:
 shell-form:
   build:
     dockerfile: Dockerfile.shell-form
+
+app-with-exec:
+  image: ubuntu
+  depends_on:
+    - exec-form
 
 exec-form:
   build:
