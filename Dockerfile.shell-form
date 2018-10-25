@@ -1,5 +1,4 @@
-FROM ruby
+FROM ubuntu:xenial
 
-COPY entrypoint.sh /usr/local/bin/
-
-ENTRYPOINT entrypoint.sh
+COPY loop.sh /usr/local/bin/
+CMD loop.sh

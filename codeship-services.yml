@@ -1,5 +1,5 @@
 app-with-shell:
-  image: ubuntu
+  image: ubuntu:xenial
   depends_on:
     - shell-form
 
@@ -8,7 +8,7 @@ shell-form:
     dockerfile: Dockerfile.shell-form
 
 app-with-exec:
-  image: ubuntu
+  image: ubuntu:xenial
   depends_on:
     - exec-form
 
