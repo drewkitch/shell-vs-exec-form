@@ -2,7 +2,6 @@ app-with-shell:
   image: ubuntu:xenial
   depends_on:
     - shell-form
-
 shell-form:
   build:
     dockerfile: Dockerfile.shell-form
@@ -11,7 +10,6 @@ app-with-exec:
   image: ubuntu:xenial
   depends_on:
     - exec-form
-
 exec-form:
   build:
     dockerfile: Dockerfile.exec-form
