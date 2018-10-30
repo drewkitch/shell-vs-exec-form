@@ -1,8 +1,10 @@
+# https://www.ctl.io/developers/blog/post/gracefully-stopping-docker-containers/
+
 - type: parallel
   steps:
-  - name: shell form
+  - name: shell form -- this step will take a while to exit
     service: app-with-shell
     command: false
-  - name: exec form
+  - name: exec form -- this step will complete right away
     service: app-with-exec
     command: false
